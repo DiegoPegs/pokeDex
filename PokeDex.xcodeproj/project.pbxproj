@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E283E3681DA57905007A7D43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E283E3611DA57905007A7D43 /* ViewController.swift */; };
+		E283E3681DA57905007A7D43 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E283E3611DA57905007A7D43 /* MainVC.swift */; };
 		E283E3691DA57905007A7D43 /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = E283E3641DA57905007A7D43 /* pokemon.csv */; };
 		E283E36A1DA57905007A7D43 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E283E3651DA57905007A7D43 /* Pokemon.swift */; };
 		E283E36B1DA57905007A7D43 /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E283E3671DA57905007A7D43 /* PokeCell.swift */; };
@@ -23,6 +23,7 @@
 		E2F142D31DA55F3A00C2C7F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2F142D11DA55F3A00C2C7F0 /* LaunchScreen.storyboard */; };
 		E2F142DE1DA55F3A00C2C7F0 /* PokeDexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F142DD1DA55F3A00C2C7F0 /* PokeDexTests.swift */; };
 		E2F142E91DA55F3A00C2C7F0 /* PokeDexUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F142E81DA55F3A00C2C7F0 /* PokeDexUITests.swift */; };
+		F12E62571DA5A10000724BB4 /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12E62561DA5A10000724BB4 /* PokemonDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E283E3611DA57905007A7D43 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E283E3611DA57905007A7D43 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		E283E3641DA57905007A7D43 /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
 		E283E3651DA57905007A7D43 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		E283E3671DA57905007A7D43 /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
@@ -63,6 +64,7 @@
 		E2F142E41DA55F3A00C2C7F0 /* PokeDexUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokeDexUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2F142E81DA55F3A00C2C7F0 /* PokeDexUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeDexUITests.swift; sourceTree = "<group>"; };
 		E2F142EA1DA55F3A00C2C7F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F12E62561DA5A10000724BB4 /* PokemonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +95,8 @@
 		E283E3601DA57905007A7D43 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E283E3611DA57905007A7D43 /* ViewController.swift */,
+				E283E3611DA57905007A7D43 /* MainVC.swift */,
+				F12E62561DA5A10000724BB4 /* PokemonDetailVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -329,7 +332,8 @@
 				E283E36B1DA57905007A7D43 /* PokeCell.swift in Sources */,
 				E283E36A1DA57905007A7D43 /* Pokemon.swift in Sources */,
 				E2F142CE1DA55F3A00C2C7F0 /* PokeDex.xcdatamodeld in Sources */,
-				E283E3681DA57905007A7D43 /* ViewController.swift in Sources */,
+				F12E62571DA5A10000724BB4 /* PokemonDetailVC.swift in Sources */,
+				E283E3681DA57905007A7D43 /* MainVC.swift in Sources */,
 				E2F142C61DA55F3A00C2C7F0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainVC.swift
 //  PokeDex
 //
 //  Created by Compila  on 05/10/16.
@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
+class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
     
     @IBOutlet weak var collection: UICollectionView!
     @IBOutlet weak var searchBar: UISearchBar!
@@ -46,7 +46,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        if isInSearchMode {
+            let pokemon = filteredPokemons[indexPath.row]
+            performSegue(withIdentifier: "PokemonDetailVC", sender: pokemon)
+        }else {
+            let pokemon = pokemons[indexPath.row]
+            performSegue(withIdentifier: "PokemonDetailVC", sender: pokemon)
+        }
     }
     
     func parsePokemonCSV(){
@@ -130,6 +136,17 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         }
     }
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "PokemonDetailVC" {
+            if let pokemon = sender as? Pokemon {
+                if let vc = segue.destination as? PokemonDetailVC {
+                    vc.pokemon = pokemon
+                }
+            }
+        }
+    }
+
     
 
 
